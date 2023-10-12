@@ -1,4 +1,5 @@
-# Assignment 2: [outline](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/AML_Assignment_2_ConvNets.pdf)
+# Assignment 2: 
+[outline](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/AML_Assignment_2_ConvNets.pdf)
 
 ## Exercise 1:
 
