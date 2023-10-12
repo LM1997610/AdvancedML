@@ -4,7 +4,7 @@
 ## Exercise 1:
 Building a Neural Network from scratch → just math and Numpy.\
 Simple 2-layer NN and its training algorithm based on **back-propagation** and **stochastic gradient descent**.\
-Class object in **two_layernet.py**
+Implemented as Class object in **two_layernet.py**
 
 Benchmark to test the model → image classification task using `CIFAR-10 dataset`
 
