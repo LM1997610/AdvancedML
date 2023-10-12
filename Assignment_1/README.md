@@ -15,7 +15,7 @@ Validation Accuracy: 0.287
 ![ex1_basic](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_1/images/ex1_basic.png)
 
 Tuning Hyper-parameters:\
-   {'hidden_size': 150, 'learning_rate': 0.004, 'regularization': 0.15, 'iterations': 4000,'batch_size': 450}
+&emsp; {'hidden_size': 150, 'learning_rate': 0.004, 'regularization': 0.15, 'iterations': 4000, 'batch_size': 450}
 
 Validation Accuracy: 0.542, &ensp; Test Accuracy:  0.535
    
