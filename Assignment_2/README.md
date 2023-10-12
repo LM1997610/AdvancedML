@@ -22,7 +22,9 @@ Techniques of geometric and color space **data-augmentation** to improve general
 
 
 
-*Visualization of trained filters in the first Convolutional Layer:*
+*Visualization of trained filters in the first Convolutional Layer :*
 ![trained_f](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/conv_filters.png)
+
+## Exercise 2:
 
 [Assignment outline](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/AML_Assignment_2_ConvNets.pdf)
