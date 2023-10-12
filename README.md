@@ -1,7 +1,9 @@
 # AdavancedML
 
 ## Assignment_2: 
-Implementation of a **Convolutional Neural Network** (CNN) for image classification on the `CIFAR-10 dataset` using Pytorch.
+
+**Exercise 1:** Implementation of a **Convolutional Neural Network** (CNN) with PyTorch\
+for image classification on the `CIFAR-10 dataset`.
 
 The model processes 32x32 color images and consists of five hidden layers with filter sizes: [128, 512, 512, 512, 512]
 The network architecture consists of five convolutional blocks, each comprising Convolution, BatchNormalization, pooling, ReLU and Dropout operations.\
