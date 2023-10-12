@@ -21,3 +21,6 @@ Tuning Hyper-parameters: \
 
 *Validation Accuracy: 0.542, &ensp; Test Accuracy:  0.535*
 ![ex1_tuned](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_1/images/ex1_tuned.png)
+
+
+## Exercise 2:
