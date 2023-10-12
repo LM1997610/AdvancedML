@@ -19,6 +19,8 @@ Techniques of geometric and color space **data-augmentation** to improve general
 
 ![al text](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/history_plot.png)
 
+<br>
+
 Visualization of trained filters in the first Convolutional Layer:
 ![trained_f](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/filters.png)
 
