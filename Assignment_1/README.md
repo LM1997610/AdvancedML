@@ -7,4 +7,6 @@ Simple 2-layer NN and its training algorithm based on **back-propagation** and *
 
 Benchmark to test the model → image classification task using `CIFAR-10 dataset`
 
-![ex1_a](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_1/images/ex_1a.png)
+![ex1_basic](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_1/images/ex1_basic.png)
+
+![ex1_tuned](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_1/images/ex1_tuned.png)
