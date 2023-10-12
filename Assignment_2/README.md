@@ -15,13 +15,14 @@ A fully connected layer is used for the classification.
 
 Techniques of geometric and color space **data-augmentation** to improve generalization.
 
-[Script](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/ex3_convnet.py) and results → Accuracy of the ConvNet on test dataset (1000 test images) : 85.2 %:
+[Script](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/ex3_convnet.py) and results;
 
 ![al text](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/history_plot.png)
 
-<br>
+→ Accuracy of the ConvNet on test dataset (1000 test images) : 85.2 %:
 
 Visualization of trained filters in the first Convolutional Layer:
+
 ![trained_f](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/filters.png)
 
 
