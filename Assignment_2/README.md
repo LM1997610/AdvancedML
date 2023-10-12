@@ -14,4 +14,4 @@ A fully connected layer is used for the classification.
 
 Techniques of geometric and color space **data-augmentations** to improve generalization.
 
-[Assignment outline]
+[Assignment outline](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/AML_Assignment_2_ConvNets.pdf)
