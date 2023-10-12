@@ -8,7 +8,7 @@ Simple 2-layer NN and its training algorithm based on **back-propagation** and *
 Benchmark to test the model → image classification task using `CIFAR-10 dataset`
 
 -----------------------------------
-Starting Hyper-parameters: \
+Provided Hyper-parameters: \
 &emsp; {'hidden_size': 50, 'learning rate': 0.0001, 'regularization': 0.25, 'iterations': 1000, 'batch_size': 200}
 
 *Validation Accuracy: 0.287*
