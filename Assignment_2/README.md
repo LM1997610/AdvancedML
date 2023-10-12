@@ -8,7 +8,7 @@ and produces a 10-class classification.
 
 The network architecture consists of five convolutional blocks, each comprising:
 
-- Convolution --> BatchNormalization --> Pooling --> ReLU --> Dropout
+ -- Convolution → BatchNormalization → Pooling → ReLU → Dropout
   
 A fully connected layer is used for the classification.
 
