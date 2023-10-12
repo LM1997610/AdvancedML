@@ -1,13 +1,14 @@
+
 import torch
 import torch.nn as nn
 import torchvision
 import torchvision.transforms as transforms
-#import numpy as np
 
 from tqdm.auto import tqdm
 import matplotlib.pyplot as plt
 
 
+#---------------------------------------------
 def weights_init(m):
     if type(m) == nn.Linear:
         m.weight.data.normal_(0.0, 1e-3)
@@ -16,7 +17,7 @@ def weights_init(m):
 def update_lr(optimizer, lr):
     for param_group in optimizer.param_groups:
         param_group['lr'] = lr
-
+#---------------------------------------------
 
 print(''' 
 _ _______________________________________________ _ _
@@ -40,14 +41,14 @@ print('\nUsing device: %s\n'%device)
 input_size = 3
 num_classes = 10
 hidden_size = [128, 512, 512, 512, 512]
-num_epochs = 27
+num_epochs = 30
 batch_size = 200
 learning_rate = 2e-3
 learning_rate_decay = 0.95
 reg = 0.001
 num_training = 49000
 num_validation = 1000
-#norm_layer = None 
+# norm_layer = None 
 norm_layer = 'BN'
 
 
@@ -68,12 +69,12 @@ data_aug_transforms = []
 
 augmentation = transforms.Compose([transforms.RandomHorizontalFlip(),
                                    transforms.RandomCrop((32,32), padding=3),
-                                   transforms.RandomRotation(degrees=15),])
-                                   #transforms.ColorJitter(brightness=0.1, 
-                                   #                       contrast=0.1, saturation=0.1, hue=0.1)])
+                                   transforms.RandomRotation(degrees=15),
+                                   transforms.ColorJitter(brightness=0.1, 
+                                                          contrast=0.1, saturation=0.1, hue=0.1) ])
 
 data_aug_transforms.append(augmentation) 
-
+#-------------------------------------------------------------------------------
 
 norm_transform = transforms.Compose(data_aug_transforms + [transforms.ToTensor(),
                                      transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
@@ -354,7 +355,7 @@ for epoch in tqdm(range(num_epochs), position=0, leave=True):
             torch.save(best_model.state_dict(), 'best_model.ckpt')
             v_line = epoch
 
-#torch.save(model.state_dict(), 'last_model.ckpt')
+# torch.save(model.state_dict(), 'last_model.ckpt')
 # ------------------------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------------------------
 
