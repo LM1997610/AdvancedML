@@ -1,6 +1,7 @@
-## Assignment_2: 
+# Assignment 2: 
 
-**Exercise 1:**\
+## Exercise 1:
+
 Implementation of a **Convolutional Neural Network** (CNN) with PyTorch for image classification on the `CIFAR-10 dataset`.
 
 The ConvNet takes 32x32 color images as inputs, has 5 hidden layers with filters sizes: [128, 512, 512, 512, 512] \
@@ -14,7 +15,7 @@ A fully connected layer is used for the classification.
 
 Techniques of geometric and color space **data-augmentation** to improve generalization.
 
-Results:
+[Script](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/ex3_convnet.py) and results:
 
 ![alt text](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/history_plot.png)
 
