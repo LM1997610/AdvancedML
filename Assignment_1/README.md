@@ -6,3 +6,5 @@ Building a Neural Network from scratch → just math and Numpy.\
 Simple 2-layer NN and its training algorithm based on **back-propagation** and **stochastic gradient descent**
 
 Benchmark to test the model → image classification task using `CIFAR-10 dataset`
+
+![ex1_a](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_1/images/ex_1a.png)
