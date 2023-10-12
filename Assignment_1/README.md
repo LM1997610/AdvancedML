@@ -24,3 +24,6 @@ Tuning Hyper-parameters: \
 
 
 ## Exercise 2:
+
+- baseline
+- best model
