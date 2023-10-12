@@ -19,7 +19,7 @@ Techniques of geometric and color space **data-augmentation** to improve general
 [Script](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/ex3_convnet.py) and results 
 → Accuracy of the ConvNet on test dataset (1000 test images) : 85.2 %:
 
-![al text](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/history_plot.png)
+![histoy_plot](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/history_plot.png)
 
 
 
