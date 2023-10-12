@@ -1,5 +1,5 @@
-# Assignment 2: 
-[Assignment outline](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/AML_Assignment_2_ConvNets.pdf)
+# Assignment 2: [Assignment outline](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/AML_Assignment_2_ConvNets.pdf)
+
 ## Exercise 1:
 
 Implementation of a **Convolutional Neural Network** (CNN) with PyTorch for image classification on the `CIFAR-10 dataset`.
