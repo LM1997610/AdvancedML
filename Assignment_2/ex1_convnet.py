@@ -8,7 +8,7 @@ from tqdm.auto import tqdm
 import matplotlib.pyplot as plt
 
 
-#---------------------------------------------
+#--------------------------------------------
 def weights_init(m):
     if type(m) == nn.Linear:
         m.weight.data.normal_(0.0, 1e-3)
