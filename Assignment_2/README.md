@@ -17,13 +17,13 @@ Techniques of geometric and color space **data-augmentation** to improve general
 
 [Script](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/ex3_convnet.py) and results;
 
-![al text](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/history_plot2.png)
+![al text](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/history_plot.png)
 
 → Accuracy of the ConvNet on test dataset (1000 test images) : 85.2 %:
 
 Visualization of trained filters in the first Convolutional Layer:
 
-![trained_f](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/filters.png)
+![trained_f](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/conv_filters.png)
 
 
 [Assignment outline](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/AML_Assignment_2_ConvNets.pdf)
