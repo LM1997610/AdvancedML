@@ -1,5 +1,5 @@
 # Assignment 2: 
-[outline](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/AML_Assignment_2.pdf)
+Guidelines [here](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_2/AML_Assignment_2.pdf)
 
 ## Exercise 1:
 
