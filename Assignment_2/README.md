@@ -23,9 +23,9 @@ Techniques of geometric and color space **data-augmentation** to improve general
 
 Test Accuracy per class :
  
-Class | #Bird | #Boat | #Car | #Cat | #Deer | #Dog | #Frog | #Horse | #Plane | #Truck 
+Class | Plane | Car | Bird | Cat | Deer | Dog | Frog | Horse | Boat | Truck
 ----- | ----- | ----- | ----- |----- |----- |----- |----- | ----- | ----- | ----- 
-Test Accuracy | 0.771 | 0.932 | 0.934 | 0.701 | 0.865 | 0.754 | 0.926 | 0.882 | 0.894 | 0.896
+Test Accuracy | 0.858 | 0.884 | 0.783 | 0.729 | 0.889 | 0.78 | 0.913 | 0.916 | 0.938 | 0.939
 
 *Visualization of trained filters in the first Convolutional Layer :*
 ![trained_f](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/filters.png)
