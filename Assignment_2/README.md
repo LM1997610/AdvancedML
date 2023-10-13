@@ -21,21 +21,10 @@ Techniques of geometric and color space **data-augmentation** to improve general
 
 ![histoy_plot](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/history_plot.png)
 
-Test Accuracy_per_class :
-
- 'Plane': 0.894
- 'Car': 0.934
- 'Bird': 0.771
- 'Cat': 0.701
- 'Deer': 0.865
- 'Dog': 0.754
- 'Frog': 0.926
- 'Horse': 0.882
- 'Boat': 0.932
- 'Truck': 0.894
+Test Accuracy per class :
  
 Class | #Bird | #Boat | #Car | #Cat | #Deer | #Dog | #Frog | #Horse | #Plane | #Truck 
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- 
+----- | ----- | ----- | ----- |----- |----- |----- |----- | ----- | ----- | ----- 
 Test Accuracy | 0.771 | 0.932 | 0.934 | 0.701 | 0.865 | 0.754 | 0.926 | 0.882 | 0.894 | 0.894
 
 *Visualization of trained filters in the first Convolutional Layer :*
