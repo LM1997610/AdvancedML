@@ -25,7 +25,7 @@ Test Accuracy per class :
  
 Class | #Bird | #Boat | #Car | #Cat | #Deer | #Dog | #Frog | #Horse | #Plane | #Truck 
 ----- | ----- | ----- | ----- |----- |----- |----- |----- | ----- | ----- | ----- 
-Test Accuracy | 0.771 | 0.932 | 0.934 | 0.701 | 0.865 | 0.754 | 0.926 | 0.882 | 0.894 | 0.894
+Test Accuracy | 0.771 | 0.932 | 0.934 | 0.701 | 0.865 | 0.754 | 0.926 | 0.882 | 0.894 | 0.896
 
 *Visualization of trained filters in the first Convolutional Layer :*
 ![trained_f](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/filters.png)
