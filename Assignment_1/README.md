@@ -25,5 +25,4 @@ Tuning Hyper-parameters: \
 
 ## Exercise 2:
 
-- baseline
-- best model
+Multi-Layer Perceptron Network with `PyTorch` to implement the classification we did before and train it on the same CIFAR-10 dataset.
