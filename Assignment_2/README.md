@@ -34,9 +34,9 @@ Test Accuracy_per_class :
  'Boat': 0.932
  'Truck': 0.894
  
-Class | #Plane | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
+Class | #Bird | #Boat | #Car | #Cat | #Deer | #Dog | #Frog | #Horse | #Plane | #Truck 
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- 
+Test Accuracy | 0.771 | 0.932 | 0.934 | 0.701 | 0.865 | 0.754 | 0.926 | 0.882 | 0.894 | 0.894
 
 *Visualization of trained filters in the first Convolutional Layer :*
 ![trained_f](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/filters.png)
