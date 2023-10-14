@@ -38,7 +38,7 @@ Implement **transfer learning** using a pre-trained [VGG-11-bn model] from Image
 Fine-tune the whole network on the CIFAR-10 dataset, starting from the ImageNet initialization.
 
 &ensp; Accuracy of the Fine-Tuned network (with Pre-Training) on the 1000 Test images : 86.9 %
-![transfer_lr_1](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/ex2_tuned.png)
+![ex2_tuned](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/ex2_tuned.png)
 
 Compare this performance to a baseline model where the entire network is trained from scratch without using ImageNet weights.\
 
