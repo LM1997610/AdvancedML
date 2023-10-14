@@ -4,7 +4,7 @@ Guidelines [here](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/As
 ## Exercise 1:
 Building a Neural Network from scratch → just math and Numpy.\
 Simple 2-layer NN and its training algorithm based on **back-propagation** and **stochastic gradient descent**.\
-Implemented as Class object in [two_layernet.py](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_1/two_layernet.py)
+Implemented as Class object in [Two_LayerNet.py](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_1/Two_LayerNet.py)
 
 Benchmark to test the model → image classification task using `CIFAR-10 dataset`
 
