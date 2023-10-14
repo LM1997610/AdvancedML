@@ -26,7 +26,7 @@ Benchmark to test the model → image classification task using `CIFAR-10 datase
 Multi-Layer Perceptron Network with `PyTorch` to implement again the classification we did before, training on the same CIFAR-10 dataset.\
 **PyThorch** simplifies neural network experimentation, extending easily a two-layer network to a three or four-layered one.
 
-Reference code in [ex2_pytorch.py]
+Reference code in [ex2_PyTorch.py](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/Assignment_1/ex2_PyTorch.py)
 
 
 
