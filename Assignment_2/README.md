@@ -30,7 +30,7 @@ Test Accuracy | 0.858 | 0.884 | 0.783 | 0.729 | 0.889 | 0.78 | 0.913 | 0.916 | 0
 <br>
 
 *Visualization of trained filters in the first Convolutional Layer :*
-![trained_f](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/filters.png)
+![filters](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/filters.png)
 
 ## Exercise 2:
 
