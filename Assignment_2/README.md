@@ -40,5 +40,8 @@ Fine-tune the whole network on the CIFAR-10 dataset, starting from the ImageNet 
 &ensp; Accuracy of the Fine-Tuned network (with Pre-Training) on the 1000 Test images : 86.9 %
 ![ex2_tuned](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/ex2_tuned.png)
 
-Compare this performance to a baseline model where the entire network is trained from scratch without using ImageNet weights.\
+Compare this performance to a baseline model where the entire network is trained from scratch without using ImageNet weights.
+
+&ensp; Accuracy of the baseline network on the 1000 test images: 83.8 %
+![ex2_baseline](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/ex2_baseline.png)
 
