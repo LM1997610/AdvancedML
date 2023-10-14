@@ -34,7 +34,8 @@ Test Accuracy | 0.858 | 0.884 | 0.783 | 0.729 | 0.889 | 0.78 | 0.913 | 0.916 | 0
 
 ## Exercise 2:
 
-Implement **transfer learning** using a pre-trained [VGG-11-bn model] from ImageNet for CIFAR-10 classification.\
+Implement **transfer learning** using a pre-trained [VGG-11-bn model](https://pytorch.org/vision/main/models/generated/torchvision.models.vgg11_bn.html) 
+from ImageNet for CIFAR-10 classification.\
 Fine-tune the whole network on the CIFAR-10 dataset, starting from the ImageNet initialization.
 
 &ensp; Accuracy of the Fine-Tuned network (with Pre-Training) on the 1000 Test images : 86.9 %
