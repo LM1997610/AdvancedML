@@ -35,6 +35,10 @@ Test Accuracy | 0.858 | 0.884 | 0.783 | 0.729 | 0.889 | 0.78 | 0.913 | 0.916 | 0
 ## Exercise 2:
 
 Implement **transfer learning** using a pre-trained [VGG-11-bn model] from ImageNet for CIFAR-10 classification.\
-Fine-tune the whole network on the CIFAR-10 dataset, starting from the ImageNet initialization.\
+Fine-tune the whole network on the CIFAR-10 dataset, starting from the ImageNet initialization.
+
+Accuracy of the network on the 1000 test images: 86.9 %
+![transfer_lr_1](https://github.com/LM1997610/AdavancedML/blob/main/Assignment_2/images/ex2_tuned.png)
+
 Compare this performance to a baseline model where the entire network is trained from scratch without using ImageNet weights.\
 
