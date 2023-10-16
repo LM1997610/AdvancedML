@@ -16,6 +16,7 @@ from utils import h36motion3d as datasets
 from utils.loss_funcs import mpjpe_error
 from utils.data_utils import define_actions
 
+
 def create_pose(ax,plots,vals,pred=True,update=False):
             
     # [16, 20, 23, 24, 28, 31] IGNORE
@@ -173,13 +174,13 @@ def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rat
     
             ax.set_zlim3d([0.0, 1.5])
             ax.set_zlabel('Z')
-           # ax.set_title('loss in mm is: '+str(round(loss.item(),4))+' for action : '+str(action)+' for '+str(output_n)+' frames')
+            ax.set_title('loss in mm is: '+str(round(loss.item(),4))+' for action : '+str(action)+' for '+str(output_n)+' frames')
             
             #plt.rcParams['grid.color'] = "white" # COMMENT FOR GRID
             
             line_anim = animation.FuncAnimation(fig, update, output_n, fargs=(data_gt,data_pred,gt_plots,pred_plots,
                                                                        fig,ax),interval=70, blit=False)
-            plt.show()
+            #plt.show()
             
             line_anim.save('human_viz2.gif',writer='pillow')
     
