@@ -111,6 +111,7 @@ def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rat
                         46, 47, 51, 52, 53, 54, 55, 56, 57, 58, 59, 63, 64, 65, 66, 67, 68,
                         75, 76, 77, 78, 79, 80, 81, 82, 83, 87, 88, 89, 90, 91, 92])
       # joints at same loc
+        joints_to_consider = 22
         joint_to_ignore = np.array([16, 20, 23, 24, 28, 31])
         index_to_ignore = np.concatenate((joint_to_ignore * 3, joint_to_ignore * 3 + 1, joint_to_ignore * 3 + 2))
         joint_equal = np.array([13, 19, 22, 13, 27, 30])
