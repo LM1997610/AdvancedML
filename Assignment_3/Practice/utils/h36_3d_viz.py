@@ -1,13 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[9]:
+from os import makedirs
+from os.path import exists
 
 
-import numpy as np
 import torch
-from torch.utils.data import DataLoader
+import numpy as np
 from tqdm.auto import tqdm 
+from torch.utils.data import DataLoader
 
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -95,7 +96,8 @@ def update(num,data_gt,data_pred,plots_gt,plots_pred,fig,ax):
     
 
 def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rate,actions):
-    
+            
+    if not exists("./images_dir/"): makedirs("./images_dir/")
     actions=define_actions(actions)
     
     for action in tqdm(actions):
@@ -164,7 +166,7 @@ def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rat
             ax.set_xlabel("x")
             ax.set_ylabel("y")
             ax.set_zlabel("z")
-            ax.set_axis_off()
+            # ax.set_axis_off()
             ax.legend(bbox_to_anchor=(.35, 0.85))
     
             ax.set_xlim3d([-1, 1.5])
@@ -183,7 +185,7 @@ def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rat
                                                                        fig,ax),interval=70, blit=False)
             #plt.show()
             
-            line_anim.save('human_viz2.gif',writer='pillow')
+            line_anim.save(f'./images_dir/human_viz_{action}.gif',writer='pillow')
     
             
             if cnt==n_viz-1:
