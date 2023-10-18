@@ -7,6 +7,7 @@
 import numpy as np
 import torch
 from torch.utils.data import DataLoader
+from tqdm.auto import tqdm 
 
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
@@ -97,8 +98,9 @@ def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rat
     
     actions=define_actions(actions)
     
-    for action in actions:
-    
+    for action in tqdm(actions):
+        print(f" ... doing action = {action}")
+                
         if visualize_from=='train':
             loader=datasets.Datasets(path,input_n,output_n,skip_rate, split=0,actions=[action])
         elif visualize_from=='validation':
@@ -118,13 +120,10 @@ def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rat
         index_to_equal = np.concatenate((joint_equal * 3, joint_equal * 3 + 1, joint_equal * 3 + 2))
             
             
-        loader = DataLoader(
-        loader,
-        batch_size=1,
-        shuffle = True,
-        num_workers=0)       
+        loader = DataLoader(loader, batch_size=1, shuffle = True, num_workers=0)       
         
         for cnt,batch in enumerate(loader): 
+                    
             batch = batch.to(device) 
             
             all_joints_seq=batch.clone()[:, input_n:input_n+output_n,:]
@@ -133,6 +132,7 @@ def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rat
             sequences_gt=batch[:, input_n:input_n+output_n, :]
             
             #sequences_predict=modello(sequences_train).permute(0,1,3,2).contiguous().view(-1,output_n,len(dim_used))
+                    
             sequences_predict = modello(sequences_train).view(-1, output_n, joints_to_consider, 3)
             sequences_predict=sequences_predict.contiguous().view(-1,output_n,len(dim_used))
             all_joints_seq[:,:,dim_used] = sequences_predict
@@ -187,5 +187,6 @@ def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rat
     
             
             if cnt==n_viz-1:
+                plt.close()
                 break
 
