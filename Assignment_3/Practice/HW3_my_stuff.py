@@ -52,7 +52,8 @@ class train_my_model():
         self.number = number
         self.path_to_save = f'./checkpoints_v{str(number)}/'  
         self.batch_size_test = 8
-
+        wandb.login()
+      
     def make_the_model(self):
 
         # Load Data
@@ -87,8 +88,6 @@ class train_my_model():
         with wandb.init(project="AML-HW3", config= hyper_params):
         
             self.make_the_model() 
-
-            wandb.login()
             
             # launch training
             self.train()
