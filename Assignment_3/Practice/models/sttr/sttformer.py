@@ -63,6 +63,7 @@ class Model(nn.Module):
                 fc_init(m)
 
     def forward(self, x):
+        print(x.size())
         x = x.reshape(-1, self.num_frames, self.num_joints, self.num_channels, self.num_persons).permute(0, 3, 1, 2, 4).contiguous()
         N, C, T, V, M = x.shape
         
