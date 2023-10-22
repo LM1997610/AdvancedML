@@ -20,7 +20,6 @@ from tqdm.auto import tqdm
 from IPython.display import clear_output
 import matplotlib.pyplot as plt
 
-
 config_diz = {"n_epochs": 41, 
               "lr" : 1e-01, 
               "weight_decay": 1e-05,
