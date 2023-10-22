@@ -93,7 +93,7 @@ class train_my_model():
             self.train()
             
             # Change the epoch according to the validation curve :
-            ckpt_path = f'./checkpoints_v{self.number}/h36m_3d_25frames_ckpt_epoch_35.pt'
+            ckpt_path = f'./checkpoints_v{self.number}/h36m_3d_25frames_ckpt_epoch_25.pt'
             self.test(ckpt_path)
 
         return self.model 
