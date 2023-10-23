@@ -299,12 +299,12 @@ class train_my_model():
 
 def do_the_job(wandb,  hyper_params):
 
-    print("\n...loggin in WandB")
+    print("\n...loggin in WandB. \n")
     wandb.login()
 
     with wandb.init(project="AML-HW3", config= hyper_params):
         
-        print("\n...building th model \n")
+        print("\n...building th Model. \n")
         this_istance = train_my_model(hyper_params, number=0)
         this_istance.do_everything(wandb)
 
