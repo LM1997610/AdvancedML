@@ -306,7 +306,7 @@ def do_the_job(wandb,  hyper_params):
         
         print("\n...building th model \n")
         this_istance = train_my_model(hyper_params, number=0)
-        this_istance.do_everything()
+        this_istance.do_everything(wandb)
 
         wandb.finish()
     
