@@ -83,8 +83,7 @@ class train_my_model():
             self.scheduler = optim.lr_scheduler.MultiStepLR(self.optimizer, milestones=self.milestones, gamma=gamma)
 
 
-    def do_everything(self, wandb):
-
+    def do_everything(self, wandb, n_to_test):
         
         self.make_the_model() 
 
@@ -92,8 +91,8 @@ class train_my_model():
         self.train(wandb)
             
         # Change the epoch according to the validation curve :
-        ckpt_path = f'./checkpoints_v{self.number}/h36m_3d_25frames_ckpt_epoch_35.pt'
-        self.test(wandb,ckpt_path)
+        ckpt_path = f'./checkpoints_v{self.number}/h36m_3d_25frames_ckpt_epoch_{n_to_test}.pt'
+        self.test(wandb, ckpt_path)
 
         return self.model 
     
@@ -297,7 +296,7 @@ class train_my_model():
 #a = make_dot(yhat, params=dict(list(go.model.named_parameters()))).render("rnn_torchviz", format="png")
 
 
-def do_the_job(wandb,  hyper_params):
+def do_the_job(wandb,  hyper_params, n_to_test):
 
     print("\n...loggin in WandB \n")
     wandb.login()
@@ -306,7 +305,7 @@ def do_the_job(wandb,  hyper_params):
         
         print("\n...building th model \n")
         this_istance = train_my_model(hyper_params, number=0)
-        this_istance.do_everything(wandb)
+        this_istance.do_everything(wandb, n_to_test)
 
         wandb.finish()
     
