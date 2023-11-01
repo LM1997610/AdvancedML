@@ -95,9 +95,9 @@ def update(num,data_gt,data_pred,plots_gt,plots_pred,fig,ax):
     return plots_gt ,plots_pred ##################
     
 
-def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rate,actions):
+def visualize(input_n,output_n,visualize_from,path,modello,device,n_viz,skip_rate,actions, directory : str):
             
-    if not exists("./images_dir/"): makedirs("./images_dir/")
+    if not exists("./"+directory+"/"): makedirs("./"+directory+"/")
     actions=define_actions(actions)
     
     for action in tqdm(actions):
