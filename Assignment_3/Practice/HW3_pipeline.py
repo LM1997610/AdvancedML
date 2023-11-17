@@ -159,7 +159,7 @@ class train_my_model():
                 loss = mpjpe_error(sequences_predict,sequences_gt)
 
                 if cnt % log_step == 0:
-                    print('[Epoch: %d, Iteration: %5d]  training loss: %.3f' %(epoch + 1, cnt + 1, loss.item()))
+                    # print('[Epoch: %d, Iteration: %5d]  training loss: %.3f' %(epoch + 1, cnt + 1, loss.item()))
 
                 loss.backward()
 
