@@ -355,7 +355,7 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
             n+=batch_dim
                 
             my_batch = batch[:,:, dim_used]
-            a,b,c,d = transformer_inputs(my_batch)
+            a,b,c,d = transformer_inputs(my_batch, device)
             
             optimizer.zero_grad()
             sequences_predict = model(a, b, c, d) #.view(-1, output_n, joints_to_consider, 3)
@@ -389,7 +389,7 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
                 n+=batch_dim
                 
                 my_batch = batch[:,:, dim_used]
-                a,b,c,d = transformer_inputs(my_batch)
+                a,b,c,d = transformer_inputs(my_batch, device)
                 sequences_predict = model(a, b, None, None) #.view(-1, output_n, joints_to_consider, 3)
                 sequences_predict = sequences_predict[:,:25, :]
                 sequences_gt=batch[:, input_n:input_n+output_n, dim_used] #.view(-1,output_n,len(dim_used)//3,3)
