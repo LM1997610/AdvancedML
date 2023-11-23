@@ -357,7 +357,7 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
             a,b,c,d = transformer_inputs(my_batch, device)
             
             optimizer.zero_grad()
-            sequences_predict = model.(a, b, c, d) #.view(-1, output_n, joints_to_consider, 3)
+            sequences_predict = model(a, b, c, d) #.view(-1, output_n, joints_to_consider, 3)
             sequences_predict = sequences_predict[:,:25, :]
             sequences_gt=batch[:, 10:35, dim_used] #.view(-1,output_n,len(dim_used)//3,3)
             loss=mpjpe_error(sequences_predict,sequences_gt)
