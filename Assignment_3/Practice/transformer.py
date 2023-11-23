@@ -414,7 +414,7 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
 
             #clear_output(wait=True)
             do_my_plot_and_save(tf, train_loss, val_loss, path_to_save_model, "transformer", epoch )
-    return val_loss, val_loss_best
+            
         
 def do_my_plot_and_save(my_model, train_loss, val_loss, path_to_save_model, model_name, this_epoch):
 
