@@ -335,8 +335,7 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
                         26, 27, 28, 29, 30, 31, 32, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45,
                         46, 47, 51, 52, 53, 54, 55, 56, 57, 58, 59, 63, 64, 65, 66, 67, 68,
                         75, 76, 77, 78, 79, 80, 81, 82, 83, 87, 88, 89, 90, 91, 92])
-    input_n = 10, 
-    output_n = 25
+    
     log_step  = 200
     clip_grad = True
     use_scheduler = True
@@ -359,8 +358,8 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
             
             optimizer.zero_grad()
             sequences_predict = model(a, b, c, d) #.view(-1, output_n, joints_to_consider, 3)
-            sequences_predict = sequences_predict[:,:output_n, :]
-            sequences_gt=batch[:, input_n:input_n+output_n, dim_used] #.view(-1,output_n,len(dim_used)//3,3)
+            sequences_predict = sequences_predict[:,:25, :]
+            sequences_gt=batch[:, 10:35, dim_used] #.view(-1,output_n,len(dim_used)//3,3)
             loss=mpjpe_error(sequences_predict,sequences_gt)
 
             #if cnt % log_step == 0:
@@ -392,7 +391,7 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
                 a,b,c,d = transformer_inputs(my_batch, device)
                 sequences_predict = model(a, b, None, None) #.view(-1, output_n, joints_to_consider, 3)
                 sequences_predict = sequences_predict[:,:25, :]
-                sequences_gt=batch[:, input_n:input_n+output_n, dim_used] #.view(-1,output_n,len(dim_used)//3,3)
+                sequences_gt=batch[:, 10:35, dim_used] #.view(-1,output_n,len(dim_used)//3,3)
                     
                 loss=mpjpe_error(sequences_predict,sequences_gt)
 
