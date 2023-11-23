@@ -357,13 +357,13 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
             a,b,c,d = transformer_inputs(my_batch, device)
             
             optimizer.zero_grad()
-            sequences_predict = model(a, b, c, d) #.view(-1, output_n, joints_to_consider, 3)
+            sequences_predict = tf(a, b, c, d) #.view(-1, output_n, joints_to_consider, 3)
             sequences_predict = sequences_predict[:,:25, :]
             sequences_gt=batch[:, 10:35, dim_used] #.view(-1,output_n,len(dim_used)//3,3)
             loss=mpjpe_error(sequences_predict,sequences_gt)
 
-            #if cnt % log_step == 0:
-            #    print('[Epoch: %d, Iteration: %5d]  training loss: %.3f' %(epoch + 1, cnt + 1, loss.item()))
+            if cnt % log_step == 0:
+                print('[Epoch: %d, Iteration: %5d]  training loss: %.3f' %(epoch + 1, cnt + 1, loss.item()))
 
             loss.backward()
 
@@ -413,10 +413,10 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
         if save_and_plot and epoch in list(range(4, n_epochs, 5)):
 
             clear_output(wait=True)
-            do_my_plot_and_save(model, train_loss, val_loss, path_to_save_model, "transformer", epoch )
+            do_my_plot_and_save(tf, train_loss, val_loss, path_to_save_model, "transformer", epoch )
 
         return val_loss, val_loss_best
-    
+        
 def do_my_plot_and_save(my_model, train_loss, val_loss, path_to_save_model, model_name, this_epoch):
 
     #if not exists(path_to_save_model): makedirs(path_to_save_model)
