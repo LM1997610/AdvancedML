@@ -413,7 +413,7 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
         if save_and_plot and epoch in list(range(4, n_epochs, 5)):
 
             #clear_output(wait=True)
-            do_my_plot_and_save(tf, train_loss, val_loss, path_to_save_model, "transformer", epoch )
+            do_my_plot_and_save(model, train_loss, val_loss, path_to_save_model, "transformer", epoch )
             
         
 def do_my_plot_and_save(my_model, train_loss, val_loss, path_to_save_model, model_name, this_epoch):
