@@ -412,7 +412,7 @@ def train(data_loader,vald_loader, n_epochs, model, scheduler, optimizer, device
         # Insert your code below. Use the argument path_to_save_model to save the model to the path specified.
         if save_and_plot and epoch in list(range(4, n_epochs, 5)):
 
-            clear_output(wait=True)
+            #clear_output(wait=True)
             do_my_plot_and_save(tf, train_loss, val_loss, path_to_save_model, "transformer", epoch )
     return val_loss, val_loss_best
         
