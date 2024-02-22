@@ -9,4 +9,10 @@ at Sapienza University of Rome.
 
 **Assignment_3**: Forecasting Human Poses and Predicting Motion - Transformer Architecture
 
-**Final project**: report [here](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/AML_project/final_report.pdf)\
+**Final project**: report [here](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/AML_project/final_report.pdf)
+
+### Group composition:
+- Gian Alvin Guico: 2033024
+- Fran¸cois Hascoat: 2116739
+- Luca Mazzucco: 1997610
+- Antonio Rocca: 1813055
