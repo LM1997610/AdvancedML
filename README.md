@@ -7,8 +7,8 @@ at Sapienza University of Rome.
 
 **Assignment_2**:  ConvNN and image classification
 
-**Assignment_3**: - Transformer Architecture
-                  - Graph Attention Network
+**Assignment_3**: - Transformer Architecture\
+                  - Graph Attention Network\
                   - Forecasting Human Poses and Predicting Motion
   
 
