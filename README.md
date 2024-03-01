@@ -8,8 +8,8 @@ at Sapienza University of Rome.
 **Assignment_2**:  ConvNN and image classification
 
 **Assignment_3**: \
-&emsp;&emsp; - Transformer Architecture\
-&emsp;&emsp; - Graph Attention Network\
+&emsp;&emsp; - [Transformer Architecture](https://nbviewer.org/github/LM1997610/AdvancedML/blob/main/Assignment_3/Theory/AML_theory.ipynb)\
+&emsp;&emsp; -[Graph Attention Network](https://nbviewer.org/github/LM1997610/AdvancedML/blob/main/Assignment_3/Theory/AML_theory.ipynb#gat)\
 &emsp;&emsp; - Forecasting Human Poses and Predicting Motion
   
 
