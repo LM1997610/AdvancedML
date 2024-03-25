@@ -10,7 +10,7 @@ at Sapienza University of Rome.
 **Assignment_3**: \
 &emsp;&emsp; - [Transformer Architecture](https://nbviewer.org/github/LM1997610/AdvancedML/blob/main/Assignment_3/Theory/AML_theory.ipynb#transformer)\
 &emsp;&emsp; - [Graph Attention Network](https://nbviewer.org/github/LM1997610/AdvancedML/blob/main/Assignment_3/Theory/AML_theory.ipynb#gat)\
-&emsp;&emsp; - Forecasting Human Poses and Predicting Motion
+&emsp;&emsp; - [Forecasting Human Poses and Predicting Motion] (https://nbviewer.org/github/LM1997610/AdvancedML/blob/main/Assignment_3/Practice/AML_practice.ipynb)
   
 
 **Final project**: report [here](https://nbviewer.org/github/LM1997610/AdavancedML/blob/main/AML_project/final_report.pdf)
